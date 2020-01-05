@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1" cellpadding="3" cellspacing="0" style="width: 60%;margin:auto">
+                            <tr>
+                   {% for i in table %}
+				<th>{{ i }}</th>
+                {% endfor %}
+                            </tr>
+                    {% for i in data %}
+                            <tr>
+                                <td>{{ i.name }}x</td>
+                                <td>{{ i.i_n }}</td>
+                                <td>{{ i.i_c or '' }}</td>
+                                <td>{{ i.g1986 or '' }}</td>
+                                <td>{{ i.g1987 or '' }}</td>
+                                <td>{{ i.g1988 or '' }}</td>
+                                <td>{{ i.g1989 or '' }}</td>
+                                <td>{{ i.g1990 or '' }}</td>
+                                <td>{{ i.g1991 or '' }}</td>
+                                <td>{{ i.g1992 or '' }}</td>
+                                <td>{{ i.g1993 or '' }}</td>
+                                <td>{{ i.g1994 or '' }}</td>
+                                <td>{{ i.g1995 or '' }}</td>
+                                <td>{{ i.g1996 or '' }}</td>
+                                <td>{{ i.g1997 or '' }}</td>
+                                <td>{{ i.g1998 or '' }}</td>
+                                <td>{{ i.g1999 or '' }}</td>
+                                <td>{{ i.g2000 or '' }}</td>
+                                <td>{{ i.g2001 or '' }}</td>
+                                <td>{{ i.g2002 or '' }}</td>
+                                <td>{{ i.g2003 or '' }}</td>
+                                <td>{{ i.g2004 or '' }}</td>
+                                <td>{{ i.g2005 or '' }}</td>
+                                <td>{{ i.g2006 or '' }}</td>
+                                <td>{{ i.g2007 or '' }}</td>
+                                <td>{{ i.g2008 or '' }}</td>
+                                <td>{{ i.g2009 or '' }}</td>
+                                <td>{{ i.g2010 or '' }}</td>
+                                <td>{{ i.g2011 or '' }}</td>
+                                <td>{{ i.g2012 or '' }}</td>
+                                <td>{{ i.g2013 or '' }}</td>
+                                <td>{{ i.g2014 or '' }}</td>
+                                <td>{{ i.g2015 or '' }}</td>
+                                <td>{{ i.g2016 or '' }}</td>
+                                <td>{{ i.g2017 or '' }}</td>
+                                <td>{{ i.g2018 or '' }}</td>
+                                <td>{{ i.g2019 or '' }}</td>
+
+
+                            </tr>
+                    {% endfor %}
+                </table>
+</body>
+</html>

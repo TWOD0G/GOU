@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1" cellpadding="3" cellspacing="0" style="width: 60%;margin:auto">
+                            <tr>
+
+				<th> name</th>
+                <th> 2014</th>
+                            </tr>
+                    {% for i in data %}
+                            <tr>
+                                <td>{{ i.name }}x</td>
+                                <td>{{ i.g_2014 }}</td>
+                            </tr>
+                    {% endfor %}
+                </table>
+</body>
+</html>

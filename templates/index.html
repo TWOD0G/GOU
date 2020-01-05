@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>page</title>
+		<style>
+			*{
+				padding:0;
+				margin:0;
+				box-sizing: border-box;
+			}
+			body{
+				background: #E1E110;
+			}
+			body,a{
+				color:#000;
+			}
+			ul,li{
+				list-style-type: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.container{
+				width: 1200px;
+				margin: 0 auto;
+			
+			}
+			.banner{
+				width: 100%;
+			}
+			.select_box{
+				float: right;
+				position: relative;
+				margin:30px 0;
+				clear: both;
+			}
+			.select_box .title{
+				min-width: 170px;
+				padding:0 40px 0 20px;
+				border:1px solid #eee;
+				height: 50px;
+				line-height: 50px;
+				position: relative;
+				cursor: pointer;
+				display: block;
+			}
+			.select_box .title:before{
+				content:'';
+				display: block;
+				position: absolute;
+				width: 10px;
+				height: 10px;
+				border-top:1px solid #000;
+				border-right:1px solid #000;
+				right:10px;
+				top:50%;
+				transform: translateY(-50%) rotateZ(135deg);
+			}
+			.option{
+				position: absolute;
+				left:0;
+				top:100%;
+				background: rgba(0,0,0,.5);
+				width: 100%;
+				display: none;
+			}
+			.option li a{
+				line-height: 40px;
+				color:#fff;
+				padding-left:20px;
+				font-size: 14px;
+				border-bottom:1px solid #fff;
+				width: 100%;
+				display: block;
+			}
+			/* table */
+			.table{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				border-collapse: collapse;/*关键代码*/
+				margin-bottom:50px;
+				clear: both;
+			}
+			.table_row{
+				
+			}
+			.table_row td,.table_row th{
+				min-width: 100px;
+				text-align: center;
+				border: 1px solid #eee;
+				padding:10px;
+				font-size: 14px;
+				color:#000;
+			}
+			.table_row th{
+				color:#000;
+			}
+			
+			.pagetion{
+				margin-bottom:50px;
+			}
+			.pagetion>ul{
+				display: flex;
+				flex-direction: row-reverse;
+			}
+			.pagetion>ul>li>a {
+				color:#000;
+				font-weight: bold;
+				margin:0 20px;
+				display: block;
+			}
+			.pagetion>ul>li>a.prev{
+				color:#000;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="container">
+
+            <br><br><br><br><br><br><div style="text-align:center"><h1>点击图片，查看数据</h1></div><br><br><br><br><br><br>
+
+                        <a href="http://127.0.0.1:5000/34"><img class="banner" src="static/img/1.jpg" ></a><br><br><br><br><br><br><br><br><br><br><br><br>
+            			<a href="http://127.0.0.1:5000/api"><img class="banner" src="static/img/g.jpg" ></a><br><br><br><br><br><br><br><br><br><br><br><br>
+            			<a href="http://127.0.0.1:5000/g34"><img class="banner" src="static/img/yf10.jpg" ></a><br><br><br><br><br><br><br><br><br><br><br><br>
+            			<a href="http://127.0.0.1:5000/sad"><img class="banner" src="static/img/yfsiw.jpg" ></a><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <div style="text-align:center"><h1>孕妇作为社会的弱势群体，同时承担着人类传承的重任，需要得到全社会的关爱。
+改善孕产妇健康是国际社会于2000年通过的八个千年发展目标中的一个，孕产妇死亡率作为人群医疗健康水平的敏感指标, 其变化状况不仅反映了全民医疗健康水平, 更在一定程度上反映当地妇女儿童权益的保障情况。  (孕产妇死亡率即每万例活产或每十万例活产中孕产妇的死亡数为孕产妇死亡率。从妊娠开始到产后42天内，因各种原因（除意外事故外）造成的孕产妇死亡均计在内。)
+
+发展中国家的孕产妇死亡占全球的99%，其中超过50%的孕产妇死亡发生在非洲撒哈拉沙漠以南地区，1/3发生在南亚。在发展中地区孕产妇死亡率是每10万活产450例，而在发达国家是每10万活产9例。全球有14个国家的孕产妇死亡率超过每10万活产1000例。这14个国家除了阿富汗之外都是位于非洲撒哈拉沙漠以南的地区，包括安哥拉、布隆迪、喀麦隆、乍得、刚果民主共和国、几内亚比绍、利比里亚、马拉维、尼日尔、尼日利亚、塞拉利昂、索马里和卢旺达。</h1></div>
+                        <br><br>
+            <div style="text-align:center">
+                <a href="http://127.0.0.1:5000/sd" >
+                    <h1>点击查看sd数据</h1>
+                </a>
+            </div><br><br><br><br><br><br>
+		</header>
+		
+
+
+	</body>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		$('.title').on('click',function(){
+			$('.option').slideToggle(500)
+		})
+	</script>
+</html>

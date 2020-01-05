@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1" cellpadding="3" cellspacing="0" style="width: 60%;margin:auto">
+                            <tr>
+                   {% for i in table %}
+				<th>{{ i }}</th>
+                {% endfor %}
+                            </tr>
+                    {% for i in data %}
+                            <tr>
+                                <td>{{ i.code }}x</td>
+                                <td>{{ i.cod }}</td>
+                                <td>{{ i.nam or '' }}</td>
+                                <td>{{ i.code1 or '' }}</td>
+                                <td>{{ i.a_2000 or '' }}</td>
+                                <td>{{ i.a_2001 or '' }}</td>
+                                <td>{{ i.a_2002 or '' }}</td>
+                                <td>{{ i.a_2003 or '' }}</td>
+                                <td>{{ i.a_2004 or '' }}</td>
+                                <td>{{ i.a_2005 or '' }}</td>
+                                <td>{{ i.a_2006 or '' }}</td>
+                                <td>{{ i.a_2007 or '' }}</td>
+                                <td>{{ i.a_2008 or '' }}</td>
+                                <td>{{ i.a_2009 or '' }}</td>
+                                <td>{{ i.a_2010 or '' }}</td>
+                                <td>{{ i.a_2011 or '' }}</td>
+                                <td>{{ i.a_2012 or '' }}</td>
+                                <td>{{ i.a_2013 or '' }}</td>
+                                <td>{{ i.a_2014 or '' }}</td>
+                                <td>{{ i.a_2015 or '' }}</td>
+                                <td>{{ i.a_2016 or '' }}</td>
+                                <td>{{ i.a_2017 or '' }}</td>
+                                <td>{{ i.a_2018 or '' }}</td>
+                                <td>{{ i.a_2019 or '' }}</td>
+                            </tr>
+                    {% endfor %}
+                </table>
+</body>
+</html>

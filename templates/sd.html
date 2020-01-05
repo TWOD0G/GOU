@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1" cellpadding="3" cellspacing="0" style="width: 60%;margin:auto">
+                <tr>
+
+                    <th> city</th>
+                    <th> f_2009</th>
+                    <th> f_2010</th>
+                    <th> f_2011</th>
+                    <th> f_2012</th>
+                    <th> f_2013</th>
+                    <th> f_2014</th>
+                    <th> f_2015</th>
+                    <th> f_2016</th>
+                    <th> f_2017</th>
+                    <th> f_2018</th>
+                    <th> f_2019</th>
+
+                </tr>
+                    {% for i in data %}
+                            <tr>
+                        <td>{{ i.city or '' }}x</td>
+                        <td>{{ i.f_2009 or '' }}x</td>
+                        <td>{{ i.f_2010 or '' }}x</td>
+                        <td>{{ i.f_2010 or '' }}x</td>
+                        <td>{{ i.f_2011 or '' }}x</td>
+                        <td>{{ i.f_2012 or '' }}x</td>
+                        <td>{{ i.f_2013 or '' }}x</td>
+                        <td>{{ i.f_2014 or '' }}x</td>
+                        <td>{{ i.f_2015 or '' }}x</td>
+                        <td>{{ i.f_2016 or '' }}x</td>
+                        <td>{{ i.f_2017 or '' }}x</td>
+                        <td>{{ i.f_2018 or '' }}x</td>
+                        <td>{{ i.f_2019 or '' }}x</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+</body>
+</html>

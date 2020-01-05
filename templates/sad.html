@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1" cellpadding="3" cellspacing="0" style="width: 60%;margin:auto">
+                            <tr>
+
+				<th> code</th>
+                <th> s_2017</th>
+                            </tr>
+                    {% for i in data %}
+                            <tr>
+                                <td>{{ i.code }}x</td>
+                                <td>{{ i.s_2017 }}</td>
+                            </tr>
+                    {% endfor %}
+                </table>
+</body>
+</html>
